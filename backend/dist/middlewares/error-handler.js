@@ -1,4 +1,4 @@
-import { AppError } from "@/utils/AppError.js";
+import { AppError } from "../utils/AppError.js";
 import z, { ZodError } from "zod";
 export const errorHandler = (error, _request, response, _next) => {
     if (error instanceof AppError) {

@@ -1,4 +1,4 @@
-import { AppError } from "@/utils/AppError.js";
+import { AppError } from "../utils/AppError.js";
 function verifyUserAuthorization(role) {
     return (request, _, next) => {
         if (!request.user || !role.includes(request.user.role)) {

@@ -1,5 +1,5 @@
-import { authConfig } from "@/configs/auth.js";
-import { AppError } from "@/utils/AppError.js";
+import { authConfig } from "../configs/auth.js";
+import { AppError } from "../utils/AppError.js";
 import { jwtVerify } from "jose";
 async function ensureAuthenticated(request, _, next) {
     try {

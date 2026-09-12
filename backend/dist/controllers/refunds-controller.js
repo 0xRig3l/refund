@@ -1,5 +1,5 @@
-import { AppError } from "@/utils/AppError.js";
-import { prisma } from "@/database/prisma.js";
+import { AppError } from "../utils/AppError.js";
+import { prisma } from "../database/prisma.js";
 import { z } from "zod";
 const CategoriesEnum = z.enum([
     "food",

@@ -1,4 +1,4 @@
-import uploadConfig from "@/configs/upload.js";
+import uploadConfig from "../configs/upload.js";
 import fs from "node:fs";
 import path from "node:path";
 export class DiskStorage {

@@ -1,5 +1,5 @@
-import { RefundsController } from "@/controllers/refunds-controller.js";
-import { verifyUserAuthorization } from "@/middlewares/verify-user-authorization.js";
+import { RefundsController } from "../controllers/refunds-controller.js";
+import { verifyUserAuthorization } from "../middlewares/verify-user-authorization.js";
 import { Router } from "express";
 const refundsRoutes = Router();
 const refundsController = new RefundsController();

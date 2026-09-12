@@ -2,7 +2,7 @@ import { usersRoutes } from "./users-routes.js";
 import { sessionsRoutes } from "./sessions-routes.js";
 import { refundsRoutes } from "./refunds-routes.js";
 import { uploadsRoutes } from "./uploads-routes.js";
-import { ensureAuthenticated } from "@/middlewares/ensure-authenticated.js";
+import { ensureAuthenticated } from "../middlewares/ensure-authenticated.js";
 import { Router } from "express";
 const routes = Router();
 // Public routes.

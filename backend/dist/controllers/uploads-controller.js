@@ -1,6 +1,6 @@
-import uploadConfig from "@/configs/upload.js";
-import { DiskStorage } from "@/providers/disk-storage.js";
-import { AppError } from "@/utils/AppError.js";
+import uploadConfig from "../configs/upload.js";
+import { DiskStorage } from "../providers/disk-storage.js";
+import { AppError } from "../utils/AppError.js";
 import z, { ZodError } from "zod";
 class UploadsController {
     async create(request, response, next) {

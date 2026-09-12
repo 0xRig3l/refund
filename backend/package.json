@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "prisma generate && tsc && npx prisma migrate deploy",
+    "build": "prisma generate && tsc && tsc-alias && npx prisma migrate deploy",
     "start": "node dist/server.js",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
@@ -24,6 +24,7 @@
     "npm-check-updates": "^23.1.0",
     "prisma": "^7.10.0",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.9.5",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
   },
