@@ -1,9 +1,9 @@
+import { routes } from "./routes/index.js";
+import { errorHandler } from "./middlewares/error-handler.js";
+import uploadConfig from "@/configs/upload.js";
+
 import express from "express";
 import cors from "cors";
-
-import { routes } from "./routes";
-import { errorHandler } from "./middlewares/error-handler";
-import uploadConfig from "@/configs/upload";
 
 const app = express();
 app.use(cors());

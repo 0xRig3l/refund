@@ -1,9 +1,9 @@
+import uploadConfig from "@/configs/upload.js";
+import { UploadsController } from "@/controllers/uploads-controller.js";
+import { verifyUserAuthorization } from "@/middlewares/verify-user-authorization.js";
+
 import { Router } from "express";
 import multer from "multer";
-
-import uploadConfig from "@/configs/upload";
-import { UploadsController } from "@/controllers/uploads-controller";
-import { verifyUserAuthorization } from "@/middlewares/verify-user-Authorization";
 
 const uploadsRoutes = Router();
 const uploadsController = new UploadsController();

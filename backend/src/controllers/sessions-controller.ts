@@ -1,7 +1,8 @@
+import { AppError } from "@/utils/AppError.js";
+import { authConfig } from "@/configs/auth.js";
+import { prisma } from "@/database/prisma.js";
+
 import { Request, Response } from "express";
-import { AppError } from "@/utils/AppError";
-import { authConfig } from "@/configs/auth";
-import { prisma } from "@/database/prisma";
 import { compare } from "bcrypt";
 import { SignJWT } from "jose";
 import { z } from "zod";
