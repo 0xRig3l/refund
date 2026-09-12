@@ -20,6 +20,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/multer": "^2.2.0",
+    "@types/node": "^22.20.2",
     "npm-check-updates": "^23.1.0",
     "prisma": "^7.10.0",
     "ts-node": "^10.9.2",
